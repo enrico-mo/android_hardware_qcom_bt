@@ -19,8 +19,6 @@
 #ifndef HCI_UART_H
 #define HCI_UART_H
 
-#include <termios.h>
-
 /* Variables to identify the platform */
 /*BT HS UART TTY DEVICE */
 #define BT_HS_UART_DEVICE "/dev/ttyHS0"

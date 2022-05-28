@@ -59,14 +59,12 @@ LOCAL_SHARED_LIBRARIES := \
         libcutils \
         liblog
 
-LOCAL_HEADER_LIBRARIES := \
-        libutils_headers
 
 # if read from bt nv
 #        libbtnv
 #LOCAL_CFLAGS += -DBT_NV_SUPPORT
 
-LOCAL_CFLAGS += -Wno-error
+LOCAL_CFLAGS += -Wno-error -Wno-implicit-function-declaration
 LOCAL_MODULE := libbt-vendor
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
